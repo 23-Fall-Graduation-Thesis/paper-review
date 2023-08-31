@@ -53,7 +53,7 @@ Paper Review for 2023-2 Graduation Project.
 
 논문 리뷰파일을 업로드할 때는 PR을 이용하며, 커밋 규칙은 아래와 같습니다.
 
-`new : 논문 이름` : 읽을 논문 issue 등록 & README 논문 추가
-`add : 논문 이름` : 논문 리뷰 파일(`.md`) 추가 & README 논문 리뷰 link 추가
+`new : 논문 이름` : 읽을 논문 issue 등록 & README 논문 추가  
+`add : 논문 이름` : 논문 리뷰 파일(`.md`) 추가 & README 논문 리뷰 link 추가  
 `update : 논문 이름` : 첫 논문 리뷰 등록 이후 추가적인 내용 수정
 
