@@ -1,8 +1,5 @@
 # paper-review
 Paper Review for 2023-2 Graduation Project.
-
-# paperReview
-
 졸업프로젝트를 위해 읽고 공부했던 주요 논문들의 내용을 간략하게 정리한 레포입니다.
 
 ### paper list
