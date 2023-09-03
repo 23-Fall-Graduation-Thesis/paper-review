@@ -47,6 +47,7 @@ The template used for a paper review is as follows.
 
 ## Commit Rules
 - `new : 논문 이름` : 읽을 논문 issue 등록 & README 논문 추가
-- `add : 논문 이름` : 논문 리뷰 파일(`.md`) 추가 & README 논문 리뷰 link 추가
+- `add : 논문 이름` : 논문 리뷰 파일(`.md`) 추가
+- `link : 논문 이름` : README 논문 리뷰 link 추가
 - `update : 논문 이름` : 첫 논문 리뷰 등록 이후 추가적인 내용 수정
 
