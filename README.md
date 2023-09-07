@@ -10,8 +10,8 @@ Paper Review for 2023-2 Graduation Project (Dept.of CSE, Konkuk Univ)
 
 ## paper list
 
-- [ ] 23-Fall-Graduation-Thesis/paper-review#1 High-Resolution Image Synthesis With Latent Diffusion Models (CVPR 2022)
-  - [Original Paper Link](https://arxiv.org/abs/2112.10752) / Paper Review Post (HyunHee)
+- [X] 23-Fall-Graduation-Thesis/paper-review#1 High-Resolution Image Synthesis With Latent Diffusion Models (CVPR 2022)
+  - [Original Paper Link](https://arxiv.org/abs/2112.10752) / [Paper Review Post (HyunHee)](https://github.com/23-Fall-Graduation-Thesis/paper-review/blob/main/HyunHee/High-Resolution%20Image%20Synthesis%20with%20Latent%20Diffusion%20Models.md)
 - [ ] 23-Fall-Graduation-Thesis/paper-review#3 Diffusion Models in Vision: A Survey (IEEE Transactions on Pattern Analysis and Machine Intelligence 2023)
   - [Original Paper Link](https://arxiv.org/abs/2209.04747) / Paper Review Post (Uijin)
 
