@@ -14,6 +14,8 @@ Paper Review for 2023-2 Graduation Project (Dept.of CSE, Konkuk Univ)
   - [Original Paper Link](https://arxiv.org/abs/2112.10752) / [Paper Review Post (HyunHee)](https://github.com/23-Fall-Graduation-Thesis/paper-review/blob/main/HyunHee/High-Resolution%20Image%20Synthesis%20with%20Latent%20Diffusion%20Models.md)
 - [ ] 23-Fall-Graduation-Thesis/paper-review#3 Diffusion Models in Vision: A Survey (IEEE Transactions on Pattern Analysis and Machine Intelligence 2023)
   - [Original Paper Link](https://arxiv.org/abs/2209.04747) / Paper Review Post (Uijin)
+- [ ] 23-Fall-Graduation-Thesis/paper-review#5 Partial Is Better Than All: Revisiting Fine-tuning Strategy for Few-shot Learning (AAAI 2021. A search based fine-tuning strategy for few-shot learning)
+  - [Original Paper Link](https://arxiv.org/abs/2102.03983) / Paper Review Post (HyunHee)
 
 ## Template
 
