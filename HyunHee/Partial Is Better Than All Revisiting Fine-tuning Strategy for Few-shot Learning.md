@@ -56,13 +56,14 @@ Few-shot Learning은 주로 meta learning method와 non-meta learning method로 
  최종 단계에서는 찾은 transfer strategy를 novel class에 적용한다. simple-baseline 방식은 backbone을 고정하고 마지막 linear layer만 fine-tuning하는 반면, meta-learning method는 meta-testing을 위해 base network를 feature extractor로 사용한다. 두 유형의 메소드에 대한 탐색 전략을 기반으로 새로운 support set에서 base network를 부분적으로 fine-tuning 한다.
 
 ## Algorithm
+
 ### Search Space
 
 이 space는 layer-level selection (fine-tuning or freezing)과 fine-tuning에 대한 learning rate assignment를 포함한다. search space는 $mk$로 정의될 수 있으며, 여기서 $m$은 learning rate 값의 선택 수이고 $k$는 network layer의 수이다. 
 
 예를 들어, learning rate $\in \{0, 0.01, 0.1, 1.0\}$($0$은 freezing)을 learning rate 공간으로 선택하면 $m = 4$이다. Conv6의 경우 search space에는 $4^6$개의 transfer strategy가 포함된다. 
 
-본 논문의 방법은 fine-tuning 중에 각 layer에 대한 최적의 selection을 learning rate selection space에서 자동으로 찾을 수 있다. 더 깊은 네트워크를 선택할 경우 공간이 급격하게 커진다.
+본 논문의 방법은 fine-tuning 중에 각 layer에 대한 최적의 selection을 learning rate selection space에서 자동으로 찾을 수 있다. 더 깊은 네트워크를 선택할 경우 공간이 급격하게 커진다. 
 ![Figure2](./image/table1.png)
 
 ### Search Algorithm
@@ -79,23 +80,19 @@ Few-shot Learning은 주로 meta learning method와 non-meta learning method로 
 
 아래 그림과 같이 기존 few-shot classification framework에 search algorithm을 통합하는 방법을 소개한다. 본 논문에서는 non-meta baseline++(Chen et al. 2019)와 meta ProtoNet (Snell, Swersky, and Zemel 2017)을 예시로 선택한다. non-meta baseline++은 training 및 fine-tuning 단계에서 feature와 weight vector 사이 cosine distance를 적용함으로써 feature 간 intra-class variation을 명시적으로 줄이는 것을 목표로 한다. 
 
- search에서는  distance based classification의 디자인을 따르지만 fine-tuning 중 서로 다른 layer에 대한 다양한 learning rate를 탐색함으로써 backbone feature extractor $f_\theta (x)$를 조정한다. 직관적으로 본 논문의 탐색 방법으로부터 learned backbone과 distance based classifier는 backbone network를 고정하고 few-shot classification을 위해 weight vector만 fine-tuning하는 것보다 조화롭고 강력하다고 할 수 있다. 본 논문의 전체 모델이 end-to-end로 조정되기 때문이다.
- ![Figure2](./image/fig3.png)
- ![Figure2](./image/algorithm.png)
+ search에서는  distance based classification의 디자인을 따르지만 fine-tuning 중 서로 다른 layer에 대한 다양한 learning rate를 탐색함으로써 backbone feature extractor $f_\theta (x)$를 조정한다. 직관적으로 본 논문의 탐색 방법으로부터 learned backbone과 distance based classifier는 backbone network를 고정하고 few-shot classification을 위해 weight vector만 fine-tuning하는 것보다 조화롭고 강력하다고 할 수 있다. 본 논문의 전체 모델이 end-to-end로 조정되기 때문이다. 
 
 
 ## Formulation
 ### Preliminary and Definition
 
- few-shot classification task에서 base classes $\bold L_b$의 풍부한 라벨링 이미지 $\bold X_b$와 novel classes $\bold L_b$의 적은 양의 라벨링 이미지 $\bold X_n$이 주어지며 $\bold L_b \cap \bold L_n = \empty$이다. N-way K-shot task를 고려하면, 여기서 novel class에 대한 support set은 $K$개의 라벨링 이미지를 갖는 $N$개의 class와 각 class에 대해 라벨링되지 않은 Q개의 이미지를 갖는 동일한 $N$개를 포함한다. Few-shot classification algorithm은 $N$개의 class의 Query set 내의 $N \times Q$개의 이미지를 인식하기 위한 분류기를 학습하는 것이다. 
+ few-shot classification task에서 base classes $L_b$의 풍부한 라벨링 이미지 $X_b$와 novel classes $L_b$의 적은 양의 라벨링 이미지 $X_n$이 주어지며 $L_b \cap L_n = \emptyset$이다. N-way K-shot task를 고려하면, 여기서 novel class에 대한 support set은 $K$개의 라벨링 이미지를 갖는 $N$개의 class와 각 class에 대해 라벨링되지 않은 Q개의 이미지를 갖는 동일한 $N$개를 포함한다. Few-shot classification algorithm은 $N$개의 class의 Query set 내의 $N \times Q$개의 이미지를 인식하기 위한 분류기를 학습하는 것이다. 
 
 P-Transfer의 목표는 최적의 transfer learning scheme $V^*_\text{lr}$을 찾는 것이다. 네트워크가 해당 방법에 따라 fine-tuning 될 때 최대 accuracy를 달성하도록 하는 것이다: 
 
-$$
-V^*_\text{lr} = \text{arg max Acc}(W, V_\text{lr}) \ \ \ \ \ \ (1)
-$$
+$$ V_\text{lr}^* = \text{arg max Acc}(W, V_\text{lr}) \ \ \ \ \ \ (1) $$
 
-여기서 $V_\text{lr} = [v_1, v_2, ..., v_L]$은 feature extractor를 fine-tuning하기 위한 layer-wise learning rate를 정의하고, $W$는 네트워크 파라미터이며 $L$은 전체 layer 개수를 나타낸다.
+여기서 $V_\text{lr} = [v_1, v_2, ..., v_L]$은 feature extractor를 fine-tuning하기 위한 layer-wise learning rate를 정의하고, $W$는 네트워크 파라미터이며 $L$은 전체 layer 개수를 나타낸다. 
 
 ## Insight
 수식적으로 optimize를 하는 논문은 아니지만 search algorithm을 통해 최적의 layer-wise learning rate를 찾는다는 점에서 참신한 방법이었던 것 같다. 이 논문의 결과를 통해 fine-tuning을 위한 weight만 중요한 것이 아니라 각 layer의 learning rate도 잘 조정해주는 게 중요하다는 관점을 얻어갈 수 있는 것 같다. 하지만 진화 알고리즘을 통해 end-to-end 방식으로 진행되는 만큼 적지 않은 시간이 소요된다는 점에서 실험적으로 시간이 부족한 우리에게는 부적절할 수도 있겠다는 생각이 들었다.
