@@ -16,6 +16,8 @@ Paper Review for 2023-2 Graduation Project (Dept.of CSE, Konkuk Univ)
   - [Original Paper Link](https://arxiv.org/abs/2209.04747) / Paper Review Post (Uijin)
 - [ ] 23-Fall-Graduation-Thesis/paper-review#5 Partial Is Better Than All: Revisiting Fine-tuning Strategy for Few-shot Learning (AAAI 2021. A search based fine-tuning strategy for few-shot learning)
   - [Original Paper Link](https://arxiv.org/abs/2102.03983) / Paper Review Post (HyunHee)
+- [ ] 23-Fall-Graduation-Thesis/paper-review#6 Robust Fine-Tuning of Deep Neural Networks with Hessian-based Generalization Guarantees (PMLR 2022)
+  - [Original Paper Link](https://arxiv.org/abs/2206.02659) / Paper Review Post (Vaughn)
 
 ## Template
 
