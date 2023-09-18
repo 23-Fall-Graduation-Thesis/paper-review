@@ -20,7 +20,8 @@ Paper Review for 2023-2 Graduation Project (Dept.of CSE, Konkuk Univ)
   - [Original Paper Link](https://arxiv.org/abs/2206.02659) / Paper Review Post (Vaughn)
 - [x] 23-Fall-Graduation-Thesis/paper-review#9 A Comprehensive Survey of Few-shot Learning: Evolution, Applications, Challenges, and Opportunities
   - [Original Paper Link](https://arxiv.org/abs/2205.06743) / [Paper Review Post (Uijin)](https://github.com/23-Fall-Graduation-Thesis/paper-review/blob/main/Uijin/A%20Comprehensive%20Survey%20of%20Few-shot%20Learning_%20Evolution%2C%20Applications%2C%20Challenges%2C%20and%20Opportunities.md)
-
+- [ ] 23-Fall-Graduation-Thesis/paper-review#12 Negative Margin Matters: Understanding Margin in Few-shot Classification (ECCV 2020)
+  - [Original Paper Link](https://arxiv.org/abs/2003.12060) / Paper Review Post (Uijin)
 
 ## Template
 
