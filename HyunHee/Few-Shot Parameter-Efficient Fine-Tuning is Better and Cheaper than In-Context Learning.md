@@ -103,7 +103,7 @@ Evaluation
 
 **Unlikelihood Training and Length Normalization**
 
- 언어 모델의 few-shot fine-tuning 성능 개선을 위해 **두 개의 추가 loss term**을 탐색한다. 언어 모델은 일반적으로 input sequence $\bold x$에 대해 올바른 target sequence인 $\bold y = (y_1, y_2, …, y_T)$의 확률을 높이도록 하는 cross-entropy loss $L_{LM} = - \frac{1}{T} \sum_t \text{log } p(y_t | \bold x, y_{<t})$로 훈련된다. 
+ 언어 모델의 few-shot fine-tuning 성능 개선을 위해 **두 개의 추가 loss term**을 탐색한다. 언어 모델은 일반적으로 input sequence $\bold x$에 대해 올바른 target sequence인 $**y** = (y_1, y_2, …, y_T)$의 확률을 높이도록 하는 cross-entropy loss $L_{LM} = - \frac{1}{T} \sum_t \text{log } p(y_t | **x**, y_{<t})$로 훈련된다. 
 
 **unlikelihood loss**
 
