@@ -22,8 +22,8 @@ Paper Review for 2023-2 Graduation Project (Dept.of CSE, Konkuk Univ)
   - [Original Paper Link](https://arxiv.org/abs/2205.06743) / [Paper Review Post (Uijin)](https://github.com/23-Fall-Graduation-Thesis/paper-review/blob/main/Uijin/A%20Comprehensive%20Survey%20of%20Few-shot%20Learning_%20Evolution%2C%20Applications%2C%20Challenges%2C%20and%20Opportunities.md)
 - [ ] 23-Fall-Graduation-Thesis/paper-review#12 Negative Margin Matters: Understanding Margin in Few-shot Classification (ECCV 2020)
   - [Original Paper Link](https://arxiv.org/abs/2003.12060) / Paper Review Post (Uijin)
-- [ ] 23-Fall-Graduation-Thesis/paper-review#13 Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning (NeurIPS 2022)
-  - [Original Paper Link](https://arxiv.org/abs/2205.05638) / Paper Review Post (HyunHee)
+- [x] 23-Fall-Graduation-Thesis/paper-review#13 Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning (NeurIPS 2022)
+  - [Original Paper Link](https://arxiv.org/abs/2205.05638) / [Paper Review Post (HyunHee)](https://github.com/23-Fall-Graduation-Thesis/paper-review/blob/main/HyunHee/Few-Shot%20Parameter-Efficient%20Fine-Tuning%20is%20Better%20and%20Cheaper%20than%20In-Context%20Learning.md)
 
 ## Template
 
