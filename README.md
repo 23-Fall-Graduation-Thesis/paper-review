@@ -23,7 +23,10 @@ Paper Review for 2023-2 Graduation Project (Dept.of CSE, Konkuk Univ)
 - [x] 23-Fall-Graduation-Thesis/paper-review#12 Few-Shot Classification with Feature Map Reconstruction Networks (CVPR 2021)
   - [Original Paper Link](https://arxiv.org/abs/2012.01506) / [Paper Review Post (Uijin)](https://github.com/23-Fall-Graduation-Thesis/paper-review/blob/main/Uijin/Few-Shot%20Classification%20with%20Feature%20Map%20Reconstruction.md)
 - [x] 23-Fall-Graduation-Thesis/paper-review#13 Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning (NeurIPS 2022)
-  - [Original Paper Link](https://arxiv.org/abs/2205.05638) / [Paper Review Post (HyunHee)](https://github.com/23-Fall-Graduation-Thesis/paper-review/blob/main/HyunHee/Few-Shot%20Parameter-Efficient%20Fine-Tuning%20is%20Better%20and%20Cheaper%20than%20In-Context%20Learning.md)
+  - [Original Paper Link](https://arxiv.org/abs/2205.05638) / [Paper Review Post (HyunHee)](https://github.com/23-Fall-Graduation-Thesis/paper-review/blob/main/HyunHee/Few-Shot%20Parameter-Efficient%20Fine-Tuning%20is%20Better%20and%20Cheaper%20than%20In-Context%20Learning.md)  
+- [ ] 23-Fall-Graduation-Thesis/paper-review#18 Less is More: Selective Layer Finetuning with SubTuning (arXiv 2023)
+  - [Original Paper Link](https://arxiv.org/abs/2302.06354) / [Paper Review Post (Uijin)]()
+
 
 ## Template
 
